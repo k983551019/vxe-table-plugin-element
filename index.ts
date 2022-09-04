@@ -691,7 +691,7 @@ export const VXETablePluginElement = {
               class: 'vxe-table--filter-element-wrapper'
             }, column.filters.map((option, oIndex) => {
               const optionValue = option.data
-              return h(resolveComponent(name), {
+              return h(resolveComponent(name!), {
                 key: oIndex,
                 ...attrs,
                 ...getCellEditFilterProps(renderOpts, params, optionValue),
@@ -756,7 +756,7 @@ export const VXETablePluginElement = {
               class: 'vxe-table--filter-element-wrapper'
             }, column.filters.map((option, oIndex) => {
               const optionValue = option.data
-              return h(resolveComponent(name), {
+              return h(resolveComponent(name!), {
                 key: oIndex,
                 ...attrs,
                 ...getCellEditFilterProps(renderOpts, params, optionValue),
